@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h4>Login Form</h4>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-item>
+              <label> Email </label>
+              <ion-input [(ngModel)] = "this.email" name = "email" ></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <label> Password </label>
+              <ion-input [(ngModel)] = "this.password" name = "password" ></ion-input>
+            </ion-item>
+          </ion-item>
+  
+
+  
+        <div>
+          <ion-button size="large" (click)="navToExplore()" expand="block">Login</ion-button>
+          <ion-button size="large" (click)="navToRegister()" expand="block">Register</ion-button>
+        </div>
+
+
